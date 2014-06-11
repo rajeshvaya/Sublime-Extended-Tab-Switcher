@@ -1,0 +1,4 @@
+[
+
+    { "keys": ["ctrl+alt+tab"], "command": "extended_switcher" }
+]
