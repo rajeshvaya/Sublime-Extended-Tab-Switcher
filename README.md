@@ -1,0 +1,1 @@
+# Extended tab switcher for Sublime
