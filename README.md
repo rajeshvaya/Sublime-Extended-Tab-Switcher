@@ -17,7 +17,7 @@ By default the the files are sorted in the order of "open files" in the side bar
 
 
 
-`
+```
 The MIT License (MIT)
 
 Copyright (c) [2014] [Rajesh Vaya <vaya.rajesh@gmail.com>]
@@ -39,4 +39,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-`
+```
