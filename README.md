@@ -17,6 +17,9 @@ By default the the files are sorted in the order of "open files" in the side bar
 
 
 
+
+This projected is licensed under the terms of the MIT license.
+
 ```
 The MIT License (MIT)
 
