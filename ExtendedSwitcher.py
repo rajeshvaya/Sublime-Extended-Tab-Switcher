@@ -49,9 +49,11 @@ class ExtendedSwitcherCommand(sublime_plugin.TextCommand):
 				if fv.file_name():
 					if (f == os.path.basename(fv.file_name())) or (f == os.path.basename(fv.file_name())+"*"):
 						open_views.append(fv)
+						self.open_views.remove(fv)
 
 				if f == "Untitled" and not fv.file_name():
 					open_views.append(fv)
+					self.open_views.remove(fv)
 					
 		self.open_views = open_views
 
