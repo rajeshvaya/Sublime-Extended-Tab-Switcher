@@ -18,10 +18,10 @@ class ExtendedSwitcherCommand(sublime_plugin.TextCommand):
 		for f in sublime.active_window().views():
 			self.open_views.append(f) # add the view object
 			file_name = f.file_name() # get the full path
-			if f.is_dirty():
-				file_name += "*" # if there are any unsaved changes to the file
-
+			
 			if file_name:
+				if f.is_dirty():
+					file_name += "*" # if there are any unsaved changes to the file
 				self.open_files.append(os.path.basename(file_name))
 			else:
 				self.open_files.append("Untitled")

@@ -3,7 +3,7 @@
 View all open files (sorted/unsorted) for switching between them.
 
 
-**This plugin is inspired by the default tab switcher in netbeans** which displays the open files to choose from on pressing `ctrl+alt+tab`.
+**This plugin is inspired by the default tab switcher in netbeans**	 which displays the open files to choose from on pressing `ctrl+alt+tab`.
 user can change the default key binding at `Preferences -> Package Settings -> Extended Tab Switcher -> Key Bindings User`
 
 
