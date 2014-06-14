@@ -58,7 +58,9 @@ User can overwrite the following configurations by adding flags in the User - Se
 ## Credits
 
 Rajesh Vaya (@rajeshvaya) [GitHub](https://github.com/rajeshvaya)
+
 Kohichi Aoki (@drikin) [GitHub](https://github.com/drikin)
+
 Philip Oliver (@phildopus) [GitHub](https://github.com/phildopus)
 
 
