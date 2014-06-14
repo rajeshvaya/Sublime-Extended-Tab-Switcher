@@ -34,7 +34,7 @@ User can overwrite the following configurations by adding flags in the User - Se
 	{
 		"skip_current_file": "true"
 	}
-	```javascript
+	```
 
 
 * Mark dirty file
@@ -48,7 +48,8 @@ User can overwrite the following configurations by adding flags in the User - Se
 	{
 		"mark_dirty_file_char": "<your-char>" 
 	}
-	```javascript
+
+	```
 
 
 
