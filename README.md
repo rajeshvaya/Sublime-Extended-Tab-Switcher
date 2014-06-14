@@ -28,6 +28,7 @@ User can overwrite the following configurations by adding flags in the User - Se
 	```
 
 * Skip current file
+
 	By default the current active file/view is also displayed within the selection of the open files. This can be overwritten by adding the following flag in the settings
 
 	```javascript
@@ -38,6 +39,7 @@ User can overwrite the following configurations by adding flags in the User - Se
 
 
 * Mark dirty file
+
 	By default all the dirty/unsaved files are marked with "*". This can be overwritten by adding the following flag in the settings
 
 
