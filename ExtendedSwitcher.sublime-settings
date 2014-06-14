@@ -1,6 +1,6 @@
 {
 	// sort the files 
-	"sort": "false",
+	"sort": "true",
 
 	// Don´t list current file?
 	"skip_current_file" : false,
