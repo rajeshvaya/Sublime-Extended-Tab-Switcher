@@ -81,7 +81,6 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 		if (list_mode == "window") or (len(views) < 1):
 			views = self.window.views()
 
-		(_, current) = self.window.get_view_index(self.window.active_view())
 		return views
 
 

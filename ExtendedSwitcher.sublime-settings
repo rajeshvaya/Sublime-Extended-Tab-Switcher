@@ -2,10 +2,6 @@
 	// sort the files 
 	"sort": "false",
 
-	// Display list of all open files in the current window
-	// if there are no open files in the current group?
-	"list_by_window_fallback" : true,
-
 	// Don´t list current file?
 	"skip_current_file" : false,
 
