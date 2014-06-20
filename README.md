@@ -63,6 +63,7 @@ Kohichi Aoki - [@drikin](https://github.com/drikin)
 
 Philip Oliver - [@phildopus](https://github.com/phildopus)
 
+Rrg - [@rrg](https://github.com/rrg)
 
 
 This projected is licensed under the terms of the MIT license.
