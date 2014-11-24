@@ -53,6 +53,16 @@ User can overwrite the following configurations by adding flags in the User - Se
 
 	```
 
+* Show full file path 
+	
+	By default the files listed will contain only the filename, This can be overwritten by adding the following flag in the settings
+
+	```javascript
+	{
+		"show_full_file_path": true 
+	}
+
+	```
 
 
 ## Credits
