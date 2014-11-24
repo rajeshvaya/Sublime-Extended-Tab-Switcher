@@ -31,7 +31,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 			else:
 				self.open_files.append("Untitled")
 
-		if self.check_for_sorting() == "true":
+		if self.check_for_sorting() == True:
 			self.sort_files()
 
 		self.window.show_quick_panel(self.open_files, self.tab_selected) # show the file list
@@ -41,7 +41,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 		if selected > -1:
 			self.window.focus_view(self.open_views[selected])
 
-		print selected
+		return selected
 
 	# sort the files for display in alphabetical order
 	def sort_files(self):
