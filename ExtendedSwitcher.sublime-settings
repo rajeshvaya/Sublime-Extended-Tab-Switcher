@@ -1,8 +1,8 @@
 {
 	// sort the files 
-	"sort": "true",
+	"sort": true,
 
-	// Don´t list current file?
+	// Don't list current file?
 	"skip_current_file" : false,
 
 	// As a visual helper, you can add a string to mark dirty files.
