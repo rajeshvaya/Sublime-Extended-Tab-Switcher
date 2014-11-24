@@ -27,11 +27,16 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 			if file_name:
 				if f.is_dirty():
 					file_name += self.settings.get('mark_dirty_file_char') # if there are any unsaved changes to the file
-				self.open_files.append(os.path.basename(file_name))
+
+				if self.settings.get('show_full_file_path') == True:
+					self.open_files.append(os.path.basename(file_name) + ' - ' + os.path.dirname(file_name)) 
+				else:
+					self.open_files.append(os.path.basename(file_name))
+					
 			else:
 				self.open_files.append("Untitled")
 
-		if self.check_for_sorting() == "true":
+		if self.check_for_sorting() == True:
 			self.sort_files()
 
 		self.window.show_quick_panel(self.open_files, self.tab_selected) # show the file list
