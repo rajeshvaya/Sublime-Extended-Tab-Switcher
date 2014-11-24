@@ -46,7 +46,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 		if selected > -1:
 			self.window.focus_view(self.open_views[selected])
 
-		print selected
+		return selected
 
 	# sort the files for display in alphabetical order
 	def sort_files(self):
