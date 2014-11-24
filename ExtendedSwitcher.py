@@ -32,7 +32,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 					self.open_files.append(os.path.basename(file_name) + ' - ' + os.path.dirname(file_name)) 
 				else:
 					self.open_files.append(os.path.basename(file_name))
-					
+
 			else:
 				self.open_files.append("Untitled")
 
@@ -58,6 +58,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 		for f in open_files:
 			for fv in self.open_views:
 				if fv.file_name():
+					f = f.replace(" - " + os.path.dirname(fv.file_name()),'')
 					if (f == os.path.basename(fv.file_name())) or (f == os.path.basename(fv.file_name())+self.settings.get('mark_dirty_file_char')):
 						open_views.append(fv)
 						self.open_views.remove(fv)
