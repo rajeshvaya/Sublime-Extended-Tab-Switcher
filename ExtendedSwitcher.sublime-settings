@@ -10,6 +10,6 @@
 	"mark_dirty_file_char" : "*",
 
 	//show full path with the filename
-	"show_full_file_path": false
+	"show_full_file_path": true
 }
 
