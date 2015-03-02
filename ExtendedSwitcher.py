@@ -37,17 +37,17 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 				if self.settings.get('show_full_file_path') == True:
 					self.open_files.append([os.path.basename(file_name), file_path]) 
 				else:
-					self.open_files.append([os.path.basename(file_name),]) 
+					self.open_files.append([os.path.basename(file_name), '']) 
 			elif f.name():
 				if f.is_dirty():
-					self.open_files.append([f.name() + self.settings.get('mark_dirty_file_char'),])
+					self.open_files.append([f.name() + self.settings.get('mark_dirty_file_char'), ''])
 				else:
-					self.open_files.append([f.name(),])
+					self.open_files.append([f.name(), ''])
 			else:
 				if f.is_dirty():
-					self.open_files.append(["Untitled"+self.settings.get('mark_dirty_file_char'),])
+					self.open_files.append(["Untitled"+self.settings.get('mark_dirty_file_char'), ''])
 				else:
-					self.open_files.append(["Untitled",])
+					self.open_files.append(["Untitled", ''])
 
 		if self.check_for_sorting() == True:
 			self.sort_files()
@@ -100,7 +100,7 @@ class ExtendedSwitcherCommand(sublime_plugin.WindowCommand):
 		if list_mode == "active_group":
 			views = self.window.views_in_group(self.window.active_group())
 
-		# get all open view if list_mode is window or active_group doesnt not have any files open
+		# get all open view if list_mode is window or active_group doesn't have any files open
 		if (list_mode == "window") or (len(views) < 1):
 			views = self.window.views()
 
